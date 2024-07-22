@@ -1,0 +1,67 @@
+/* IMPORT */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* VARIABLE */
+
+:root {
+  --background-color: #202020;
+  --text-color: #ffffff;
+  --secondary-color: #1e2ad3;
+  --box-color: #000000;
+}
+
+/* BODY */
+
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  width: 50%;
+}
+
+.header-left-container h1 {
+  font-size: 2.5rem;
+}
+
+.header-right {
+  width: 50%;
+}
+
+#modem {
+  width: 100%;
+}
