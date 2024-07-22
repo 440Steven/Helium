@@ -20,13 +20,13 @@
   list-style: none;
   text-decoration: none;
   font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
 }
 
 body {
   min-height: 100vh;
   background-color: var(--background-color);
-  font-family: "Inter", sans-serif;
-  color: var(--text-color);
 }
 
 /* NAVBAR */
@@ -48,25 +48,24 @@ nav ul {
 
 header {
   display: flex;
-  align-items: center;
-  margin: 20px;
+  justify-content: space-around;
+  margin: 30px auto;
 }
 
 .header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
 }
 
-.header-left-container {
-  padding: 10px;
-}
-
 .header-left-container h1 {
-  font-size: 4.9em;
+  font-size: 5rem;
 }
 
 .header-left-container h3 {
   color: var(--secondary-color);
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .header-left-container p {
@@ -82,3 +81,52 @@ header {
 }
 
 /* FOOTER */
+
+.infos {
+  display: flex;
+  background-color: var(--box-color);
+  border-radius: 10px;
+}
+
+.info-left {
+  width: 33%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+button {
+  border: none;
+  background: var(--secondary-color);
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.info-right {
+  width: 67%;
+}
+
+.investors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.img-container img {
+  height: 60px;
+}
