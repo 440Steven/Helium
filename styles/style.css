@@ -19,6 +19,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-weight: 500;
 }
 
 body {
@@ -48,14 +49,28 @@ nav ul {
 header {
   display: flex;
   align-items: center;
+  margin: 20px;
 }
 
 .header-left {
   width: 50%;
 }
 
+.header-left-container {
+  padding: 10px;
+}
+
 .header-left-container h1 {
-  font-size: 2.5rem;
+  font-size: 4.9em;
+}
+
+.header-left-container h3 {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+.header-left-container p {
+  font-size: 1rem;
 }
 
 .header-right {
@@ -65,3 +80,5 @@ header {
 #modem {
   width: 100%;
 }
+
+/* FOOTER */
