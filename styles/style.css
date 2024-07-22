@@ -32,33 +32,30 @@ body {
 /* NAVBAR */
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 10px 20px;
 }
 
 nav ul {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
 /*  HEADER  */
 
 header {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 50% 50%;
   margin: 30px auto;
 }
 
-.header-left {
-  display: flex;
-  justify-content: center;
+.header-left-container {
+  display: grid;
+  height: 100%;
   align-items: center;
-  width: 50%;
+  justify-content: center;
 }
-
 .header-left-container h1 {
   font-size: 5rem;
 }
@@ -78,24 +75,24 @@ header {
 
 #modem {
   width: 100%;
+  margin: 0 auto;
 }
 
 /* FOOTER */
 
 .infos {
-  display: flex;
   background-color: var(--box-color);
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: 33% 67%;
 }
 
 .info-left {
-  width: 33%;
+  height: 100%;
 }
 
 .btn-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
 }
 
 button {
@@ -110,23 +107,22 @@ button {
 }
 
 .info-right {
-  width: 67%;
+  width: 100%;
 }
 
 .investors {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: center;
-  height: 80%;
+  height: 86%;
 }
 
 .img-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
 .img-container img {
   height: 60px;
 }
+
+/*** MEDIA QUERIES ***/
