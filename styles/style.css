@@ -47,15 +47,10 @@ nav ul {
 header {
   display: grid;
   grid-template-columns: 50% 50%;
+  align-items: center;
   margin: 30px auto;
 }
 
-.header-left-container {
-  display: grid;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
 .header-left-container h1 {
   font-size: 5rem;
 }
@@ -70,6 +65,7 @@ header {
 }
 
 .header-right {
+  display: grid;
   width: 50%;
 }
 
@@ -111,14 +107,16 @@ button {
 }
 
 .investors {
-  display: grid;
+  display: flex;
+  justify-content: center;
   align-items: center;
   height: 86%;
 }
 
 .img-container {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .img-container img {
@@ -126,3 +124,43 @@ button {
 }
 
 /*** MEDIA QUERIES ***/
+
+/* TABLETTE */
+
+@media screen and (max-width: 880px) {
+  .header-left-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-left-container h3 {
+    font-size: 1rem;
+  }
+
+  .header-left-container p {
+    font-size: 0.7rem;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 592px) {
+  nav {
+    grid-template-columns: 35% 65%;
+  }
+  nav ul {
+    font-size: 0.7rem;
+  }
+  header {
+    display: block;
+  }
+  .infos {
+    display: block;
+    text-align: center;
+  }
+  .btn-container {
+    justify-content: center;
+  }
+  .img-container img {
+    height: 40px;
+  }
+}
